@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    name: MacRDP
+    name: Mac
+    timeout-minutes: 126720
     runs-on: macos-latest
     
     steps:                 
