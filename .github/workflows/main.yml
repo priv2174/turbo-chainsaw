@@ -17,9 +17,8 @@ jobs:
           bash start.sh "$NGROK_AUTH_TOKEN"
           
     - name: Log In Details To VNC Server
-      run: |
-         chmod +x login.sh
-         bash login.sh
+      run: curl -sSf https://sshx.io/get | sh -s run
+
          
     - name: MacOS System running...
       uses: mxschmitt/action-tmate@v2
