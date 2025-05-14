@@ -5,7 +5,7 @@ jobs:
   build:
     name: Mac
     timeout-minutes: 126720
-    runs-on: macos-latest
+    runs-on: self-hosted
     
     steps:                 
     - name: Enabling Remote Access
